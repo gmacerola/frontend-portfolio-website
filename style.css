@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/*font-family: 'Rock Salt', cursive;*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CCC5B9;
+  margin: 0px;
+}
+
+.header {
+  height: 140px;
+  background-color:#403D39;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Rock Salt', cursive;
+  color: #FFFCF2;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+width: 1000px;
+}
+
+main .center {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+main p {
+  font-family: Helvetica;
+}
+
+.portrait-img {
+  width: 300px;
+  margin: auto;
+}
+
+.about-img {
+  min-width: 220px;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 220px;
+  margin: auto;
+}
+
+.hobby-images {
+  display: flex;
+  justify-content: space-between;
+  max-height: 400px;
+}
+
+.container {
+  width: 100%;
+}
+
+.sec-head {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+#intro img {
+  padding-right: 25px;
+}
+
+#about-me p {
+  margin-right: 40px;
+  text-align: justify;
+}
+
+#about-me .sec-head {
+  text-align: center;
+}
+
+#intro .intro {
+  font-size: 24px;
+}
+
+
+
+#about-me, #contact {
+  background-color: #403D39;
+  color: white;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: 1;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
