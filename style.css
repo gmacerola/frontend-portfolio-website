@@ -10,15 +10,77 @@ body {
   margin: 0px;
 }
 
-.header {
-  height: 140px;
+header {
   background-color:#403D39;
+  margin-bottom: 40px;
+  color: #FFFCF2;
+}
+
+header h1 {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+header nav {
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-family: 'Rock Salt', cursive;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  margin: 0 20px 0 0;
   color: #FFFCF2;
+}
+
+.hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #2098D1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #403D39;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
+  color: white;
+}
+.hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+header nav ul li:last-child a {
+  margin-right: 0px;
 }
 
 footer {
@@ -91,16 +153,55 @@ main p {
   font-size: 24px;
 }
 
-
+#intro .item {
+  min-width: 300px;
+  max-width: 400px;
+}
 
 #about-me, #contact {
   background-color: #403D39;
   color: white;
 }
 
+.email {
+  display: flex;
+  width: 100%;
+  margin: 10px 20px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: arial;
+  margin-top: 5px;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+    background: #CCC5B9;
+    color: black;
+    margin: 0 8px 10px 0;
+}
+
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item {
@@ -108,7 +209,29 @@ main p {
   margin: 10px;
 }
 
-@media all and (min-width: 800px) {
+.align-center     { align-items: center;     }
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+    font-size: 18px;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #CCC5B9;
+  }
+  
   section {
     padding: 0 10%;
   }
