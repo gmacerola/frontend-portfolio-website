@@ -186,6 +186,10 @@ form textarea {
   margin-bottom: 10px;
 }
 
+form input {
+  width: 100%
+}
+
 form button {
     padding: 10px 16px;
     border-radius: 10px;
