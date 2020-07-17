@@ -14,14 +14,22 @@
   </head>
 
   <body>
-    <div class="header">
-      <header>
-        <h1>Gianpaolo Macerola's<br>Responsive Portfolio</h1>
-      </header>
-    </div>
+    <header>
+      <h1>Gianpaolo Macerola's<br>Responsive Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#intro" class="hvr-rectangle-in">Intro</a></li>
+          <li><a href="#about-me" class="hvr-rectangle-in">About Me</a></li>
+          <li><a href="#portfolio" class="hvr-rectangle-in">Portfolio</a></li>
+          <li><a href="#contact" class="hvr-rectangle-in">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
 
     <main>
       <div class="container">
+        <div class="align-center">
         <section id="intro">
           <div class="group">
             <div class="item">
@@ -34,6 +42,7 @@
             </div>
           </div>
         </section>
+        </div>
 
         <section id="about-me">
           <p class="sec-head">About Me</p>
@@ -107,12 +116,26 @@
           <div class="group">
             <div class="item">
               <p>If you have any questions regarding my work or availability, do not hesitate to reach out to me.  I am currently available for hire if the right opportunity comes my way.</p>
-              <p>You can contact me through one of the following channels:</p>
+              <p>You can find me & samples of my work through one of the following links:</p>
               <ul>
                 <li><a href="https://www.linkedin.com/in/gmacerola/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/gmacerola" target="_blank">GitHub</a></li>
-                <li>Email: <a href="mailto:gmacerola@gmail.com">gmacerola@gmail.com</a></li>
               </ul>
+            </div>
+            <div class="email">
+              <form action="https://formspree.io/mnqgolpk" method="POST">
+                <label for="user">Name:</label>
+                <input id="user" type="text" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input id="email" type="email" name="_replyto" required>
+
+                <label for="form-message">Your Message:</label>
+                <textarea id="form-message" name="message" required minlength="5" placeholder="Type your message here."></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </form>
             </div>
           </div>
         </section>
